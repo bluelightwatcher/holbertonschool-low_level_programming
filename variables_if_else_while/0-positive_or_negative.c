@@ -1,8 +1,16 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * Main - entry poiny
+ * If - checks if integer is positive
+ * Else if - checks if integer is equal to zero
+ * and is nested whithin if function
+ * printf - displays string according to the value of n
+ * Return: 0 */
 int main(void)
 {
 	int n;
