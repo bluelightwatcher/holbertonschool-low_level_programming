@@ -5,12 +5,13 @@
 
 /* betty style doc for function main goes there */
 /**
- * Main - entry poiny
+ * main - entry poiny
  * If - checks if integer is positive
  * Else if - checks if integer is equal to zero
  * and is nested whithin if function
  * printf - displays string according to the value of n
- * Return: 0 */
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
@@ -20,15 +21,15 @@ int main(void)
 	/* your code goes there */
 		if (n > 0)
 		{
-		printf("%d is positive\n",n);
+		printf("%d is positive\n", n);
 		}
-		else if(n==0)
+		else if (n == 0)
 		{
-		printf("%d is equal to zero\n",n);
+		printf("%d is equal to zero\n", n);
 		}
 		else
 		{
-		printf("%d is negative\n",n);
+		printf("%d is negative\n", n);
 		}
 	return (0);
 }
