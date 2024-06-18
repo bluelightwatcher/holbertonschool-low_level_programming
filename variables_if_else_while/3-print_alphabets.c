@@ -12,7 +12,7 @@ n = 'A';
 		putchar(n);
 		n++;
 	}
-	n = 'a'
+	n = 'a';
 	while (n <= 'z')
 	{
 		putchar(n);
