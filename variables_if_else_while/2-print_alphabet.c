@@ -12,6 +12,6 @@ n = 'a';
 		putchar(n);
 		n++;
 	}
+	putchar('\n')
 	return (0);
-	putchar('\n');
 }
