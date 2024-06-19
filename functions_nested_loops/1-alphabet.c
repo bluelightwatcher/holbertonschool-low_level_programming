@@ -3,7 +3,7 @@
 *  print_alphabet - loops over the alphabet
 *  and print each letter on the same line
 *
-* Return: Always 0.
+* Return: void
 */
 void print_alphabet(void)
 {
@@ -12,6 +12,5 @@ void print_alphabet(void)
 	{
 	_putchar(i);
 	}
-	_putchar(\n);
-	return (0);
+	_putchar('\n');
 }
