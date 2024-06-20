@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- *print_last_digit - uses modulo to print the last digit
- *@r: is an integer
- */
-int print_last_digit(int r)
+*print_last_digit - uses modulo to print the last digit
+*@a: is an integer
+*/
+int print_last_digit(int a)
 {
-	return (r%10);
+	return (a%10);
 }
 
