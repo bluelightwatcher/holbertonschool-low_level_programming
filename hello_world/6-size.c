@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * Main - entry point
+ * main - entry point
  * printf - will used to display a value
  * value from the sizeof operator
- * return: 0
+ * Return: 0
  */
 int main(void)
 {
