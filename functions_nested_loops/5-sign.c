@@ -1,8 +1,12 @@
 #include "main.h"
 /**
- *
- *
+ *print_sign - prints the sign of number n
+ *@n: is an integer
+ *Return: either 1, -1, 0
  */
+
+int print_sign(int n);
+
 int print_sign(int n)
 {
 	if (n > 0)
