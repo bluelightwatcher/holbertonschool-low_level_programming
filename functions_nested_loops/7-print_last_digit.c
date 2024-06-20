@@ -2,10 +2,10 @@
 
 /**
  *print_last_digit - uses modulo to print the last digit
- *
+ *@r: is an integer
  */
-int print_last_digit(int) 
+int print_last_digit(int r)
 {
-	return (int % 10);
+	return (r%10);
 }
 
