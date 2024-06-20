@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-*_islower - checks if the character is in lowercase
-*@c: is the variable
+*_isalpha - checks if the character is a letter
+*@c: is surprisingly an int
 *Return: 0
 */
 int _isalpha(int c)
