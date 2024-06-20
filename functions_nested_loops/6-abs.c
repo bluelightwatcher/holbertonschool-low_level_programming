@@ -6,8 +6,5 @@ int _abs (int a)
 	{
 	a = a * -1;
 	}
-	else
-	{
 	return (a);
-	}
 }
