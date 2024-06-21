@@ -1,6 +1,7 @@
 #ifndef MAINHEADER
 #define MAINHEADER
 
+void times_table(void);
 int add(int, int);
 int _abs(int);
 int print_sign(int n);
