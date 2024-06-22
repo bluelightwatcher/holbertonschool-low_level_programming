@@ -1,6 +1,7 @@
 #ifndef MAINHEADER
 #define MAINHEADER
 
+void jack_bauer(void)
 int _abs(int);
 void times_table(void);
 int add(int, int);
