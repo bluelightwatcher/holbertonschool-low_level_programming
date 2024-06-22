@@ -8,13 +8,19 @@ int main(void)
 	int num = 0;
 
 	do {
+		if (num == 9)
+		{
+			putchar(num + 48);
+			num++;
+		}
+		else
+		{
 		putchar(num + 48);
 		putchar(',');
 		putchar(' ');
 		num++;
-	} while (num < 9);
-
-putchar(num + 48);
+		}
+	} while (num <= 9);
 
 return (0);
 }
