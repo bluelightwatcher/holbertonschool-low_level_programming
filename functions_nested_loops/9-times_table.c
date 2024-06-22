@@ -34,7 +34,7 @@ char format (char k ,int j)
 return (0);
 }
 	
-int main (void)
+void times_table (void)
 {
 	int i;
 	int j;
@@ -50,7 +50,6 @@ int main (void)
 		}
 	_putchar('\n');
 	}
-return (0);
 }
 
 
