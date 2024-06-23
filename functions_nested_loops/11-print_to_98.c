@@ -15,12 +15,12 @@ void print_to_98(int n)
 	{
 		while (n <= target)
 		{
-			printf("%d, ", n);
 			if (n == target)
 			{
 				printf("%d\n", n);
 				break;
 			}
+			printf("%d, ", n);
 			n++;
 		}
 	}
