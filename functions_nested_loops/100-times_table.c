@@ -33,7 +33,7 @@ return (0);
 char format(char k, int j)
 {
 
-	while (j >= 0 )
+	while (j > 0 )
 	{
 		do 
 		{
