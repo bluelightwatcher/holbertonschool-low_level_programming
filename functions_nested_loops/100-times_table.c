@@ -8,6 +8,7 @@
  * Return: void
  */
 
+int n;
 
 char result(int k)
 {
@@ -25,7 +26,6 @@ return (0);
 
 char format(char k, int j)
 {
-	int n = 0;
 
 	while (j > 0 && j < n)
 	{
