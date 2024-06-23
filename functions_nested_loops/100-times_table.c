@@ -14,18 +14,18 @@ char result(int k)
 {
 	if (k > 99)
 	{
-	_putchar((k / 100) + 48);
-	_putchar(((k / 100) % 10) + 48);
-	_putchar((k % 10) + 48);
+	_putchar((k / 100) + '0');
+	_putchar(((k / 100) % 10) + '0');
+	_putchar((k % 10) + '0');
 	}
 	else if (k > 9)
 	{
-	_putchar((k / 10) + 48);
-	_putchar((k % 10) + 48);
+	_putchar((k / 10) + '0');
+	_putchar((k % 10) + '0');
 	}
 	else
 	{
-	_putchar(k + 48);
+	_putchar(k + '0');
 	}
 return (0);
 }
