@@ -21,7 +21,7 @@ char result(int k)
 	{
 	_putchar((k / 100) + 48);
 	_putchar(((k / 100) % 10) + 48);
-	_putchar(k % 10) + 48);
+	_putchar((k % 10) + 48);
 	}
 	else
 	{
