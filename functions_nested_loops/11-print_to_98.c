@@ -19,6 +19,7 @@ void print_to_98(int n)
 			if (n == target)
 			{
 				printf("%d\n", n);
+				break;
 			}
 			n++;
 		}
