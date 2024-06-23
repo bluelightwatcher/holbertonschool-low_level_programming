@@ -6,9 +6,8 @@
  * Return: zero
  */
 
-int main(void)
+void print_to_98(int n)
 {
-	int n;
 	int target = 98;
 
 	if (n < target)
@@ -39,5 +38,10 @@ int main(void)
 	{
 		printf("%d\n", target);
 	}
-return (0);
+}
+
+int main(void)
+{
+	int n = n;
+	print_to_98(n);
 }
