@@ -49,7 +49,7 @@ char format(char k, int j)
 			_putchar(' ');
 			_putchar(' ');
 			}
-		} while (j < n);
+		} while (j < n-1);
 	break;
 	}
 return (0);
