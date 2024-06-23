@@ -43,5 +43,7 @@ void print_to_98(int n)
 int main(void)
 {
 	int n = n;
+
 	print_to_98(n);
+	return (0);
 }
