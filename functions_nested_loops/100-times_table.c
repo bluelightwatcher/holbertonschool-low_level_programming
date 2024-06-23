@@ -75,8 +75,8 @@ void print_times_table(int n)
 			{
 				int k = i * j;
 				
-				result(k);
 				format (k, j);
+				result(k);
 			}
 		_putchar('\n');
 		}
