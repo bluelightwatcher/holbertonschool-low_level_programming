@@ -33,19 +33,19 @@ return (0);
 char format(char k, int j)
 {
 
-	while (j > 0 )
+	while (j >= 0 )
 	{
 		do 
 		{
-			if (k > 9)
+			if (k > 99)
 			{
 			_putchar(',');
-			_putchar(' ');
 			_putchar(' ');
 			}
-			else if (k > 99)
+			else if (k > 9)
 			{
 			_putchar(',');
+			_putchar(' ');
 			_putchar(' ');
 			}
 			else
