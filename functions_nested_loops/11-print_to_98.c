@@ -13,10 +13,10 @@ void print_to_98(int n)
 
 	if (n < target)
 	{
-		while (n < (target + 1))
+		while (n <= target)
 		{
 			printf("%d, ", n);
-			if (n == 98)
+			if (n == target)
 			{
 				printf("%d\n", n);
 			}
@@ -25,18 +25,18 @@ void print_to_98(int n)
 	}
 	else if (n > target)
 	{
-		while (n > (target - 1))
+		while (n >= target)
 		{
 			printf("%d, ", n);
-			if (n == 98)
+			if (n == target )
 			{
-				printf("\n");
+				printf("%d\n", n);
 			}
 			n--;
 		}
 	}
 	else
 	{
-		printf("%d\n", target);
+		printf("%d\n", n);
 	}
 }
