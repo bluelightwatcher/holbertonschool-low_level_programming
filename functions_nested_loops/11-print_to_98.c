@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * main - runs the print to 98 program
+ * print_to_98 - runs the print to 98 program
+ * @n: is an integer
  * Return: zero
  */
 
@@ -38,12 +39,4 @@ void print_to_98(int n)
 	{
 		printf("%d\n", target);
 	}
-}
-
-int main(void)
-{
-	int n = n;
-
-	print_to_98(n);
-	return (0);
 }
