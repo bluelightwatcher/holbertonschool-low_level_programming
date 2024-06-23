@@ -49,7 +49,7 @@ char format(char k, int j)
 			_putchar(' ');
 			_putchar(' ');
 			}
-		} while (j < n-1);
+		} while (j < n);
 	break;
 	}
 return (0);
@@ -68,9 +68,9 @@ void print_times_table(int n)
 			for (j = 0 ; j <= n ; j++)
 			{
 				int k = i * j;
-
-				result(k);
+				
 				format (k, j);
+				result(k);
 			}
 		_putchar('\n');
 		}
