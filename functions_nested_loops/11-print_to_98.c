@@ -28,7 +28,7 @@ void print_to_98(int n)
 	{
 		while (n >= target)
 		{
-			if (n == target )
+			if (n == target)
 			{
 				printf("%d\n", n);
 				break;
