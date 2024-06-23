@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * main - runs the print to 98 program
  * Return: zero
@@ -6,7 +8,7 @@
 
 int main(void)
 {
-	int n = 98;
+	int n;
 	int target = 98;
 
 	if (n < target)
