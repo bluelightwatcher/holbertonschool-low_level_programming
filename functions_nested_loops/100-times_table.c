@@ -24,9 +24,15 @@ return (0);
 
 char format(char k, int j)
 {
-	while (j > 0)
+	while (j > 0 && j < n)
 	{
 		if (k > 9)
+		{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		}
+		else if (k > 99)
 		{
 		_putchar(',');
 		_putchar(' ');
@@ -34,6 +40,7 @@ char format(char k, int j)
 		else
 		{
 		_putchar(',');
+		_putchar(' ');
 		_putchar(' ');
 		_putchar(' ');
 		}
@@ -49,15 +56,19 @@ void print_times_table(int n)
 	int i;
 	int j;
 
-	for (i = 0 ; i <= n ; i++)
+	if (n > 0 && n < 15)
 	{
-		for (j = 0 ; j <= n ; j++)
-		{
-			int k = i * j;
 
-			format (k, j);
-			result(k);
+		for (i = 0 ; i <= n ; i++)
+		{
+			for (j = 0 ; j <= n ; j++)
+			{
+				int k = i * j;
+
+				format (k, j);
+				result(k);
+			}
+		_putchar('\n');
 		}
-	_putchar('\n');
 	}
 }
