@@ -27,26 +27,29 @@ return (0);
 char format(char k, int j)
 {
 
-	while (j > 0 && j < n)
+	while (j > 0 )
 	{
-		if (k > 9)
+		do 
 		{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		}
-		else if (k > 99)
-		{
-		_putchar(',');
-		_putchar(' ');
-		}
-		else
-		{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(' ');
-		}
+			if (k > 9)
+			{
+			_putchar(',');
+			_putchar(' ');
+			_putchar(' ');
+			}
+			else if (k > 99)
+			{
+			_putchar(',');
+			_putchar(' ');
+			}
+			else
+			{
+			_putchar(',');
+			_putchar(' ');
+			_putchar(' ');
+			_putchar(' ');
+			}
+		} while (j < n);
 	break;
 	}
 return (0);
