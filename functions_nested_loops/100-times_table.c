@@ -13,6 +13,7 @@ int n;
 char result(int k)
 {
 	_putchar(k + '0');
+	return (0);
 }
 
 char format(char k, int j)
