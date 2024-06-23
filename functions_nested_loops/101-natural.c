@@ -23,4 +23,5 @@ int main(void)
 	}
 	printf("%d\n", mult3 + mult5);
 	putchar('\n');
+return (0);
 }
