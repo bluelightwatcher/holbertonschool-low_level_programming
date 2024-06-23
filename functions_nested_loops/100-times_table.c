@@ -12,16 +12,7 @@ int n;
 
 char result(int k)
 {
-	if (k > 9)
-	{
-	_putchar((k / 10) + 48);
-	_putchar((k % 10) + 48);
-	}
-	else
-	{
-	_putchar(k + 48);
-	}
-return (0);
+	_putchar(k + '0');
 }
 
 char format(char k, int j)
