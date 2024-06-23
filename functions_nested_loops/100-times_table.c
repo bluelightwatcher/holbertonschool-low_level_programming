@@ -27,7 +27,7 @@ return (0);
 char format(char k, int j)
 {
 
-	while (j > 0 )
+	while (j >= 0 )
 	{
 		do 
 		{
@@ -49,7 +49,7 @@ char format(char k, int j)
 			_putchar(' ');
 			_putchar(' ');
 			}
-		} while (j < n);
+		} while (j != n);
 	break;
 	}
 return (0);
