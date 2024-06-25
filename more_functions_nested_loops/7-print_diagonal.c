@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * print_line - prints a diagonal line
+ * print_diagonal - prints a diagonal line
  * Description: prints a backslash then a new line
  * then int steps prints spaces
  * then increment steps
@@ -10,7 +10,7 @@
  * Return: void
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int target = n;
 	int steps = 1;
