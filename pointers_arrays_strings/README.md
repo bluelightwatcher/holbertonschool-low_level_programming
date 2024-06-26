@@ -25,4 +25,9 @@ int swap = *a; // variable swap is equal to the value accessed by a
 *a = *b;   // value accessed by a is equal to the value accessed by b
 *b = swap; // value accessed by b is equal to the value of variable swap
 
+task 2
+
+Programm uses a loop to count the number of characters.
+I initially wanted to use the sizeof operator in order to check the number of character in a string. 
+I have not succeeded so we looped over the string and return the number of character prior to the Null character. 
 
