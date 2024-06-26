@@ -8,10 +8,21 @@ How to use strings and how to manipulate them
 Scope of variables
 
 task 0
-first commit: the logic is corret although the syntax was incorrect
-to change the value stored in a variable using a pointer do as follow
+first commit: the logic is corret although the syntax was incorrect.
+to change the value stored in a variable using a pointer do as follow.
 
--*ptr = var 
+*ptr = var 
 *ptr = 42
+
+task 1
+
+swaping 2 values together. 
+First: creating a temporary value to store "a" value.
+Second: storing "b" value into "a" using "*b".
+Third: storing temporary value into b using "*b".
+
+int swap = *a; // variable swap is equal to the value accessed by a
+*a = *b;   // value accessed by a is equal to the value accessed by b
+*b = swap; // value accessed by b is equal to the value of variable swap
 
 
