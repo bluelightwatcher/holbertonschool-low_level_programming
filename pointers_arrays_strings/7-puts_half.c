@@ -1,4 +1,5 @@
 #include"main.h"
+
 #include"2-strlen.c"
 /**
  * puts_half - prints a string starting from the half
@@ -10,7 +11,7 @@ void puts_half(char *str)
 {
 	int start;
 
-	start = _strlen(str);
+	start = (_strlen(str) / 2);
 
 	while (start != '\0')
 	{
