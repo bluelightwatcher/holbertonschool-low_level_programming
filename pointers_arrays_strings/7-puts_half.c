@@ -1,5 +1,5 @@
 #include"main.h"
-
+#include"2-strlen.c"
 /**
  * puts_half - prints a string starting from the half
  * @str: is a string
