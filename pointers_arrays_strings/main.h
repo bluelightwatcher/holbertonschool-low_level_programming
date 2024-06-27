@@ -1,6 +1,7 @@
 #ifndef MYHEADER
 #define MYHEADER
 
+void rev_string(char *s);
 void print_rev(char *s);
 void _puts(char *str);
 int _strlen(char *s);
