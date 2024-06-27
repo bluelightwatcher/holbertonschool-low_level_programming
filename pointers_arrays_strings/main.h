@@ -2,6 +2,7 @@
 #define MYHEADER
 
 
+int _strlen(char *str);
 int _strlen(char *s);
 void puts_half(char *str);
 void puts2(char *str);
