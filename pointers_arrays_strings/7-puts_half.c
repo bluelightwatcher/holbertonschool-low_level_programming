@@ -1,6 +1,6 @@
 #include"main.h"
+#include"_strlen.c"
 
-#include"2-strlen.c"
 /**
  * puts_half - prints a string starting from the half
  * @str: is a string
@@ -9,14 +9,16 @@
 
 void puts_half(char *str)
 {
-	int start;
+	int compt;
+	int checker = 0;
 
-	start = (_strlen(str) / 2);
-
-	while (start != '\0')
+	if (_strlen(str) % 2 != 0)
 	{
-		_putchar(str[start]);
-		start++;
+		checker += 1;
+	}
+		for (compt = (_strlen(str) + checker) / 2; compt < _strlen(str); compt++)
+	{
+		_putchar(str[compt]);
 	}
 	_putchar('\n');
 }
