@@ -1,7 +1,8 @@
 #ifndef MYHEADER
 #define MYHEADER
 
-
+void print_array(int *a, int n);
+int _strlen(char *s);
 void puts_half(char *str);
 void puts2(char *str);
 void rev_string(char *s);
