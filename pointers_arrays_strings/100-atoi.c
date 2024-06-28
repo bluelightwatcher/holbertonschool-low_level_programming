@@ -12,5 +12,6 @@ int _atoi(char *s)
 	_putchar('e');
 	_putchar('k');
 	_putchar('t');
+	_putchar(*s);
 	return (0);
 }
