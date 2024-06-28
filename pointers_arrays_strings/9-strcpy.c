@@ -1,5 +1,11 @@
 #include"main.h"
 
+/**
+ * _strcpy - copy one string to a destination
+ * @dest: is an array of characters
+ * @src: is an array of characters
+ * Return: initial location of the destination string
+ */
 
 char *_strcpy(char *dest, char *src)
 {
