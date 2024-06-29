@@ -20,7 +20,7 @@ char *cap_string(char *str)
 	}
 	while (*temp != '\0')
 	{
-		if (*temp == ' ' || *temp == '\n' || *temp == '\t')
+		if (*temp == ' ' || *temp == '\n' || *temp == '.' || *temp == '\t')
 		{
 			temp++;
 			if (*temp >= 'a' && *temp <= 'z')
