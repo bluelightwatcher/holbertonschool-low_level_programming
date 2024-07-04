@@ -1,5 +1,6 @@
 #include"main.h"
 
+
 /**
  *_strchr - looks for a character in a string
  *@s: is a string
@@ -19,5 +20,6 @@ char *_strchr(char *s, char c)
 		}
 		ptr++;
 	}
-return (NULL);
+ptr = NULL;
+return (ptr);
 }
