@@ -1,7 +1,7 @@
 #ifndef MYHEADER
 #define MYHEADER
 
-
+int _putchar(char c);
 int _sqrt_recursion(int n);
 int _pow_recursion(int x, int y);
 int factorial(int n);
