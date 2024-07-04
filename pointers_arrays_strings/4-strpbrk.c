@@ -23,5 +23,6 @@ char *_strpbrk(char *s, char *accept)
 	s++;
 	} while (*s != '\0');
 
-	return (NULL);
+	start = NULL;
+	return (start);
 }
