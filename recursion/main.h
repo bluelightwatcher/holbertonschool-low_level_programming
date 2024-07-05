@@ -3,7 +3,7 @@
 
 int is_prime(unsigned int n, unsigned int c);
 int is_prime_number(int n);
-int root(int n = 1);
+
 int _putchar(char c);
 int _sqrt_recursion(int n);
 int _pow_recursion(int x, int y);
