@@ -3,7 +3,7 @@
 
 int is_prime(unsigned int n, unsigned int c);
 int is_prime_number(int n);
-void _print_rev_recursion(char *s)
+void _print_rev_recursion(char *s);
 
 int _putchar(char c);
 int _sqrt_recursion(int n);
