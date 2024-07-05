@@ -11,16 +11,18 @@
 
 int main(int argc, char *argv[])
 {
-	int uno = atoi(argv[1]);
-	int dos = atoi(argv[2]);
-
 	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+
 	else
 	{
+
+		int uno = atoi(argv[1]);
+		int dos = atoi(argv[2]);
+
 		printf("%d\n", (uno * dos));
 		return (0);
 	}
