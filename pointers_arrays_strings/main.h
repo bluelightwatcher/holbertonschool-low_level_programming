@@ -1,6 +1,7 @@
 #ifndef MYHEADER
 #define MYHEADER
 
+int _strlen_recursion(char *s);
 char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 char *_strpbrk(char *s, char *accept);
