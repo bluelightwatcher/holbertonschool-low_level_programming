@@ -1,4 +1,6 @@
 #include"main.h"
+
+
 /**
  * _strpbrk - look for matching value of accept in s
  * @s: is an array of charachters
@@ -23,6 +25,6 @@ char *_strpbrk(char *s, char *accept)
 	s++;
 	} while (*s != '\0');
 
-	start = NULL;
-	return (start);
+	
+	return ('\0');
 }
