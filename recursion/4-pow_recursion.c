@@ -1,5 +1,5 @@
 #include"main.h"
-#include<stdio.h>
+
 
 /**
  * _pow_recursion - calculate x to the factor of y recursively
