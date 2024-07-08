@@ -6,7 +6,7 @@
  * @argc: is an integer
  * @argv: is an array of character
  * Return: zero
- * this is a test comment
+ * this is another test comment
  */
 
 int main(int argc, char *argv[])
