@@ -11,7 +11,7 @@ char *create_array(unsigned int size, char c)
 	
 	char *temp = (char*)malloc(sizeof(unsigned int) * size);
 
-	if (temp == 0) //checks if malloc failled
+	if (temp == NULL) //checks if malloc failled
 	{
 		return (NULL);
 	}
