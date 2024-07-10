@@ -10,8 +10,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
-	unsigned int counter;
-
 
 	/*returns NULL if variable are 0*/
 	if (nmemb == 0 || size == 0)
@@ -27,11 +25,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	/*initializes arrays member to 0 */
-	for (counter = 0; counter < nmemb; counter++)
-	{
-		*((int *)ptr + counter) = 0;
-	}
-	ptr -= (nmemb * size);
+	/*setting memory to 0*/
+	memset(ptr, 0, nmemb * size);
+
+	/*returning ptr*/
 	return (ptr);
 }
