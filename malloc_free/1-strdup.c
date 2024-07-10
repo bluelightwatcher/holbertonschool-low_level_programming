@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * _strlen - calculate length of a string
+ * @s: is a pointer to character
+ * Return: an integer
+ */
 
 int _strlen(char *s)
 {
@@ -13,10 +18,16 @@ int _strlen(char *s)
 
 }
 
+/**
+ * _strdup - duplicates a string (dynamically)
+ * @str: is a pointer to an array  of characters
+ * Return: a pointer to an array of charaters
+ */
+
 char *_strdup(char *str)
 {
 	char *dup;
-	int size = _strlen(str)+1;
+	int size = _strlen(str) + 1;
 
 	dup = malloc(size);
 
@@ -36,10 +47,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	else 
+	else
 	{
 		return (dup);
 	}
-	free (dup);
+	free(dup);
 	return (dup);
 }
