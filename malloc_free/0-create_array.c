@@ -12,6 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *temp;
+	unsigned int counter = 0;
 
 	if (size == 0) /* checks if size is null */
 	{
@@ -24,9 +25,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-
-	unsigned int counter = 0;
-
+	
 	while (counter < size) /*initialize the array with c */
 	{
 		temp[counter] = c;
