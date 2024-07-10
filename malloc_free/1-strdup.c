@@ -28,15 +28,13 @@ char *_strdup(char *str)
 {
 	char *dup;
 	int size = _strlen(str) + 1;
-
+	int counter = 0;
 	dup = malloc(size);
 
 	if (dup == NULL)
 	{
 		return (NULL);
 	}
-
-	int counter = 0;
 
 	while (counter < size)
 	{
