@@ -1,6 +1,27 @@
 #include"main.h"
 #include<stdlib.h>
-#include<string.h>
+
+/**
+ *_memset- copy a const bytes to s
+ *@s: is a pointer
+ *@b: is a character
+ *@n: is an unsigned integer
+ *Return: pointer start
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+        char *start = s;
+
+        do {
+                *s = b;
+                s++;
+                n--;
+        } while (n > 0);
+
+return (start);
+}
+
 /**
  * _calloc - allocates size of an array and initializes it to zero
  * @nmemb: is the number of elements in the array
@@ -27,7 +48,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 
 	/*setting memory to 0*/
-	memset(ptr, 0, nmemb * size);
+	_memset(ptr, 0, nmemb * size);
 
 	/*returning ptr*/
 	return (ptr);
