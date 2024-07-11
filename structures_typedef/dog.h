@@ -7,6 +7,8 @@
  * @owner: pointer to dog owner's name
  */
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 struct dog
 {
 	char *name;
