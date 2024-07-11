@@ -3,6 +3,10 @@
 
 void print_dog(struct dog *d)
 {
+	if (d == 0)
+	{
+		return;
+	}
 	if (name == NULL)
 	{
 		printf("Name: (nil)")
