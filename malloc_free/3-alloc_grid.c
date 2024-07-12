@@ -1,58 +1,36 @@
-#include"main.h"
-#include<stdlib.h>
-#include<stdio.h>
+#include "main.h"
 /**
- * alloc_grid - allocates memory dynamically for a 2D array
- * Description: although memory blocks are stored continously
- * C does not support dynamcally allocated memory for 2D arrays
- * in this situation we need to create a pointer to an array of pointers
- * hence the nested loops
- * @width: is the numbers of lines
- * @height: is the numbers of rows
- * Return: a pointer to a pointer
- */
-
-
+* alloc_grid - retourne un pointeur a un 2d
+* @width: int
+* @height: unt
+* Return: retourne mon esperance de vie
+*/
 int **alloc_grid(int width, int height)
 {
-	int **ptr2;
-	int i = 0;
-	int j = 0;
-
-	if (width <= 0 || height <= 0)
-	{
+	int heightIndex;
+	int widthindex;
+	int **p;
+	if (width <= 0)
 		return (NULL);
-	}
-    /* Allocate memory for the array of pointers (rows)*/
-
-	ptr2 = malloc(sizeof(int *) * height);
-	if (ptr2 == NULL)
-	{
+	if (height <= 0)
 		return (NULL);
-	}
-    /* Allocate memory for each row and initialize elements to 0*/
-
-	for (int i = 0; i < height; i++)
+	p = malloc(height * sizeof(int *));
+	if (p == NULL)
+		return (NULL);
+	for (heightIndex = 0; heightIndex < height; heightIndex++)
 	{
-		ptr2[i] = malloc(sizeof(int) * width);
-		if (ptr2[i] == NULL)
+		p[heightIndex] = malloc(width * sizeof(int));
+		if (p[heightIndex] == NULL)
 		{
-			/* Free previously allocated memory in case of failure*/
-			for (int j = 0; j < i; j++)
-			{
-				free(ptr2[j]);
-			}
-			free(ptr2);
+			for (widthindex = 0; widthindex < heightIndex; widthindex++)
+				free(p[widthindex]);
+			free(p);
 			return (NULL);
 		}
+		for (widthindex = 0; widthindex < width; widthindex++)
+		{
+			p[heightIndex][widthindex] = 0;
+		}
 	}
-
-	/* Initializes elements to 0*/
-
-	for (int j = 0; j < width; j++)
-	{
-		ptr2[i][j] = 0;
-	}
-	
-	return (ptr2);
+	return (p);
 }
