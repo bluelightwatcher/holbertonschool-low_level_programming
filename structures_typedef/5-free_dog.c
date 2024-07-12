@@ -1,5 +1,5 @@
-#include"dog.h"
-#include<stdlib.h>
+#include <stdlib.h>
+#include "dog.h"
 /**
  * free_dog - frees pointer to structure dog_t
  * @d: is the pointer to dog_t
