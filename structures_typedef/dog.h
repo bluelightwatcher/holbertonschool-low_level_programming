@@ -22,9 +22,9 @@ typedef struct dog dog_t;
 	void	free_dog(dog_t *d);
 #endif
 
-//*#ifndef MYSTRUCT
-#define MYSTRUCT
-/**
+/**#ifndef MYSTRUCT
+ * #define MYSTRUCT
+
  * struct dog - structure contains elements related to a dog
  * @name: pointer to dog's name
  * @age: pointer to dog's age
