@@ -1,4 +1,4 @@
-#include<dog.h>
+#include"dog.h"
 #include<stdlib.h>
 /**
  * free_dog - frees pointer to structure dog_t
@@ -7,7 +7,7 @@
 
 void free_dog(dog_t *d)
 {
-	if (d == 0)
+	if (d == NULL)
 	return;
 
 	free(d->name);
