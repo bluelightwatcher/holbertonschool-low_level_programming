@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include "dog.h"
 
+/**
+ * print_dog - prints the elements of dog structure
+ * @d: is a pointer to struct dog
+ * Return: void
+ */
+
 void print_dog(struct dog *d)
 {
 
@@ -35,5 +41,4 @@ void print_dog(struct dog *d)
 	{
 		printf("\nOwner: %s", d->owner);
 	}
-	return;
 }
