@@ -45,6 +45,7 @@ int **alloc_grid(int width, int height)
 			free(ptr2);
 			return (NULL);
 		}
+	}
 
 	/* Initializes elements to 0*/
 
@@ -52,6 +53,6 @@ int **alloc_grid(int width, int height)
 	{
 		ptr2[i][j] = 0;
 	}
-	}
+	
 	return (ptr2);
 }
