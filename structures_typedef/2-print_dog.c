@@ -33,4 +33,5 @@ void print_dog(struct dog *d)
 	{
 		printf("\nOwner: %s", dog->owner);
 	}
+	return;
 }
