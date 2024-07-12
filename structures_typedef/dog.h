@@ -10,7 +10,7 @@
  * @owner: proprio du boudin
  */
 
-void free_dog(dog_t *d);
+
 struct dog
 {
 	char *name;
