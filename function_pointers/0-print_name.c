@@ -25,6 +25,6 @@ void write(char *name)
 
 void print_name(char *name, void (*f)(char *))
 {
-	f = &write;
+
 	f(name);
 }
