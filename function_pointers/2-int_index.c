@@ -31,5 +31,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 		}
 		index++;
 	}
-exit (42);
+exit(42);
 }
