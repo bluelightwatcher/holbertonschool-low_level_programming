@@ -1,4 +1,4 @@
-#include "function_pointers"
+#include "function_pointers.h"
 
 /**
  * int_index - function traverses an array and returns an int
@@ -12,7 +12,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int index = 0;
 
-	if (size <= 0)
+	if (size <= 0) /* checks if array is not empty */
 	{
 		return (-1);
 	}
@@ -24,13 +24,12 @@ int int_index(int *array, int size, int (*cmp)(int))
 			return (-1);
 		}
 
-		cmp(array[index]);
 
-		if (cmp != 0)
+		if (cmp(array[index]) != 0)
 		{
-			return (cmp);
+			return (index);
 		}
 		index++;
 	}
-return (0);
+exit (42);
 }
