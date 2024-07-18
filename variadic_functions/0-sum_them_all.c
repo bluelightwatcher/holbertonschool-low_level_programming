@@ -21,7 +21,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	while (index < ((int)n))
 	{
-		sum +=va_arg(suite, int);
+		sum += va_arg(suite, int);
 		index++;
 	}
 	va_end(suite);
