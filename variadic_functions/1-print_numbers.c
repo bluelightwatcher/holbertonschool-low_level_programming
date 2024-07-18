@@ -3,9 +3,10 @@
 #include <stdlib.h>
 
 /**
- * sum_them_all - variadic function of n elements
+ * print_numbers - variadic function of n elements
+ * @separator: is a pointer to char
  * @n: is the number of elements to access in the macro
- * Return: sum of n elements
+ * Return: void
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
