@@ -22,5 +22,5 @@ typedef struct list_s
 } list_t;
 
 size_t print_list(const list_t *h);
-
+int _strlen(char *str);
 #endif
