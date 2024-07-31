@@ -3,7 +3,7 @@
 /**
  * sum_dlistint - function returns the sum of numbers in a list
  * @head: is the start of list
- * Return: unsigned int typedcast as an int 
+ * Return: unsigned int typedcast as an int
  */
 
 int sum_dlistint(dlistint_t *head)
@@ -12,7 +12,7 @@ int sum_dlistint(dlistint_t *head)
 
 	if (head == NULL)
 	{
-		return(0);
+		return (0);
 	}
 	else
 	{
