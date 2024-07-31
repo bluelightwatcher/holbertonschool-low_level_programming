@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_dnode_dat_index - function returns node to a given index
+ * get_dnodeint_at_index - function returns node to a given index
  * @head: is the pointer to the starting node
  * @index: is the nth node in the list
  * Return: pointer to the nth node
