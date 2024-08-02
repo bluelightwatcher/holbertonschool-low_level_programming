@@ -2,12 +2,23 @@
 #include <string.h>
 #include <ctype.h>
 
+/**
+ * binary_to_uint - function prints unsigned int into binary
+ * @b: is a const string of characters
+ * Return: binary value
+ */
+
 unsigned int binary_to_uint(const char *b)
 {
 
 	unsigned int total;
 	int multiplier;
 	int size;
+
+	if (!b)
+	{
+		return (0);
+	}
 
 	size = 0;
 	while (*b != '\0')
