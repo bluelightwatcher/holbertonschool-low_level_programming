@@ -8,6 +8,10 @@
 
 void print_binary(int n)
 {
+	if (!n)
+	{
+		return (-1);
+	}
 	if (n > 1)
 		print_binary(n >> 1);
 
