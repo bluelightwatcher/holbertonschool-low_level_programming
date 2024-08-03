@@ -3,7 +3,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char buffer[letters];
+	char buffer[1024];
 	int fd;
 	ssize_t count;
 
@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	cout = read(fd, buffer, letters);
+	count = read(fd, buffer, letters);
 	if (count == -1)
 	{
 		return (0);
