@@ -5,6 +5,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char buffer[letters];
 	int fd;
+	ssize_t count;
 
 	/*edge case*/
 	if (filename == NULL)
@@ -18,11 +19,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	write(fd, buffer, letters);
-	if (write == -1)
+	cout = read(fd, buffer, letters);
+	if (count == -1)
 	{
 		return (0);
 	}
-return (write);
+return (count);
 }
 
