@@ -19,17 +19,21 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	fd = open(filename, 003);
+	fd = open(filename, O_RDONLY);
 	if (fd < 0)
 	{
+		free(buffer);
 		return (0);
 	}
 
 	count = read(fd, buffer, letters);
 	if (count == -1)
 	{
+		free(buffer);
 		return (0);
 	}
+free(buffer);
+close(fd);
 return (count);
 }
 
