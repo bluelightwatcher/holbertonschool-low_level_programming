@@ -1,6 +1,6 @@
 #ifndef FILEIO
 #define FILEIO
-
+#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
