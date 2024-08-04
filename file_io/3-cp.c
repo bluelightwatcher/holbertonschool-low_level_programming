@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	FD_SOURCE = open(argv[1], O_RDONLY);
-	FD_DEST =  open(argv[2], O_CREAT | O_WRONLY | O_TRUNC , 0664);
+	FD_DEST =  open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while ((READ_VALUE = read(FD_SOURCE, buf, 1024)) > 0)
 	{
 		WRITE_VALUE = write(FD_DEST, buf, READ_VALUE);
@@ -40,12 +40,12 @@ int main(int argc, char *argv[])
 	}
 	if (close(FD_SOURCE) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n",FD_SOURCE);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", FD_SOURCE);
 		exit(100);
 	}
 	if (close(FD_DEST) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n",FD_DEST);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", FD_DEST);
 		exit(100);
 	}
 	return (0);
