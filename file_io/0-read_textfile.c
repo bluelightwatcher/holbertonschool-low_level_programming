@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * read_textfile - function read and write n characters from file
+ * @filename: is the pointed file
+ * @letters: is the number of char to print
+ * Return: numbers of char written or -1 on failure 
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -7,6 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd;
 	ssize_t count;
 	char *buffer = malloc(sizeof(char) * letters);
+
 	if (buffer == NULL)
 	{
 		return (0);
