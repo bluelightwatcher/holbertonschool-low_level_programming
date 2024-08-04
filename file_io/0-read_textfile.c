@@ -4,7 +4,7 @@
  * read_textfile - function read and write n characters from file
  * @filename: is the pointed file
  * @letters: is the number of char to print
- * Return: numbers of char written or -1 on failure 
+ * Return: numbers of char written or -1 on failure
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
